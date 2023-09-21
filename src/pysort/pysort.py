@@ -22,3 +22,8 @@ class PySort:
 					sequences[min_idx], sequences[j] = sequences[j], sequences[min_idx]
 
 		return sequences
+
+	@staticmethod
+	def insertion_sort(sequences: List[int]):
+		for i in range(len(sequences)):
+			pass
