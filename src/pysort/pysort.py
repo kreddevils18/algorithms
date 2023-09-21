@@ -10,3 +10,15 @@ class PySort:
 					sequences[j], sequences[j + 1] = sequences[j + 1], sequences[j]
 
 		return sequences
+
+	@staticmethod
+	def selection_sort(sequences: List[int]):
+		for i in range(len(sequences)):
+			print(sequences)
+			min_idx = i
+
+			for j in range(i + 1, len(sequences)):
+				if sequences[min_idx] > sequences[j]:
+					sequences[min_idx], sequences[j] = sequences[j], sequences[min_idx]
+
+		return sequences

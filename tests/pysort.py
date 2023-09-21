@@ -23,6 +23,9 @@ class TestBubbleSort:
 			)
 		]
 	)
-	def test_bubble_sort__ok(self, sequences, expected):
+	def test_pysort__ok(self, sequences, expected):
 		result = PySort.bubble_sort(sequences)
 		assert result == expected, "Result is unexpected"
+
+		result = PySort.selection_sort(sequences)
+		assert result == expected, "the result of selection sort is unexpected"
