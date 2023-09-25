@@ -27,3 +27,6 @@ class TestBubbleSort:
 
 		result = PySort.selection_sort(sequences)
 		assert result == expected, "the result of selection sort is unexpected"
+
+		result = PySort.quick_sort(sequences)
+		assert result == expected, "the result of quick sort is unexpected"
